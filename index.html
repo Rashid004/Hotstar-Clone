@@ -14,61 +14,30 @@
       <img src="./images/logo.png" class="hots-logo" alt="Logo">
 
       <ul class="nav-list">
-      <li class="nav-items"><a href="#">TV</a></li>
-      <li class="nav-items"><a href="#">Movies</a></li>
-      <li class="nav-items"><a href="#">Sports</a></li>
-      <li class="nav-items"><a href="#">Premium</a></li>
+      <li class="nav-items"><a class="nav__link" href="#TV">TV</a></li>
+      <li class="nav-items"><a class="nav__link" href="#Movie">Movies</a></li>
+      <li class="nav-items"><a class="nav__link" href="#Sports">Sports</a></li>
+      <li class="nav-items"><a class="nav__link" href="#">Premium</a></li>
       </ul>
 
       <div class="right-container">
-         <input type="search" name="search" placeholder="Search" class="search-box">
+         <input class="search-box" type="search" name="search" placeholder="Search">
          <button class="sub-btn">Subscribe</button> 
          <a class="login-link" href="#">Login</a>
       </div>
    </nav>
-
-   <div class="carousel-container">
-      <div class="carousel ">
-       <div class="slider slider--1">
-         <div class="slide-content">
-         <h1 class="movie-tittle">Loki</h1>
-         <p class="movie-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel laborum, praesentium in aut qui quo consectetur voluptas quaerat perspiciatis. Id totam cum sint magni nam obcaecati sunt beatae animi quibusdam.
-         </p>
-         </div>
+   <!-- //////////////////// -->
+       <div class="carousel-container">
+       <div class="carousel ">
+       <!-- <div class="slider">
+          <div class="slide-content">
+          <h1 class="movie-name">Loki</h1>
+          <p class="movie-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. quo consectetur voluptas quaerat perspiciatis. Id totam cum sint magni nam obcaecati sunt beatae animi quibusdam.
+          Lorem ips.
+          </p>
+         </div> 
          <img src="./images/slider 1.PNG" alt="slider 1">
-         </div>
-        <div class="slider slider--2">
-         <div class="slide-content">
-         <h1 class="movie-tittle">the falcon</h1>
-         <p class="movie-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel laborum, praesentium in aut qui quo consectetur voluptas quaerat perspiciatis. Id totam cum sint magni nam obcaecati sunt beatae animi quibusdam.
-         </p>
-      </div>
-      <img src="./images/slider 2.PNG" alt="slider 2">
-        <!-- </div> -->
-       <!-- <div class="slider slider--3">
-         <div class="slide-content">
-         <h1 class="movie-tittle">the falcon</h1>
-         <p class="movie-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel laborum, praesentium in aut qui quo consectetur voluptas quaerat perspiciatis. Id totam cum sint magni nam obcaecati sunt beatae animi quibusdam.
-         </p>
-         </div>
-         <img src="./images/slider 3.PNG" alt="slider 3">
-        </div> -->
-       <!-- <div class="slider slider--4">
-         <div class="slide-content">
-         <h1 class="movie-tittle">Wanda</h1>
-         <p class="movie-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel laborum, praesentium in aut qui quo consectetur voluptas quaerat perspiciatis. Id totam cum sint magni nam obcaecati sunt beatae animi quibusdam.
-         </p>
-         </div>
-         <img src="./images/slider 4.PNG" alt="slider 4">
-        </div> -->
-         <!-- <div class="slider slider--5">
-         <div class="slide-content">
-         <h1 class="movie-tittle">Wanda</h1>
-         <p class="movie-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel laborum, praesentium in aut qui quo consectetur voluptas quaerat perspiciatis. Id totam cum sint magni nam obcaecati sunt beatae animi quibusdam.
-         </p>
-         </div>
-         <img src="./images/slider 5.PNG" alt="slider 5">
-        </div> -->
+      </div> -->
       </div> 
    </div>
 
@@ -95,8 +64,8 @@
       </div>
    </div>
 
-   <h1 class="heading-1">Recommended For You</h1>
-   <div class="movies-container">
+   <h1 class="heading-1" id="Movie">Recommended For You</h1>
+   <div class="movies-list">
       <button class="pre-btn">
          <img src="./images/pre.png" alt="left btn" title="btn">
       </button>
@@ -108,40 +77,432 @@
             <img class="card-images" src="./images/poster 1.png" alt="poster 1">
             <div class="card-body">
                <h2 class="name">Loki</h2>
-               <h6 class="diss">This is the best in Marvel!</h6>
-               <button class="watchlist">add to watchlist</button>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
             </div>
          </div>
          <div class="card">
             <img class="card-images" src="./images/poster 2.png" alt="poster 2">
             <div class="card-body">
-               <h2 class="name">Loki</h2>
-               <h6 class="diss">This is the best in Marvel!</h6>
-               <button class="watchlist">add to watchlist</button>
+               <h2 class="name">mulan</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
             </div>
          </div>
          <div class="card">
             <img class="card-images" src="./images/poster 3.png" alt="poster 3">
             <div class="card-body">
-               <h2 class="name">Loki</h2>
-               <h6 class="diss">This is the best in Marvel!</h6>
-               <button class="watchlist">add to watchlist</button>
+               <h2 class="name">the falcon</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
             </div>
          </div>
          <div class="card">
             <img class="card-images" src="./images/poster 4.png" alt="poster 4">
             <div class="card-body">
-               <h2 class="name">Loki</h2>
-               <h6 class="diss">This is the best in Marvel!</h6>
-               <button class="watchlist">add to watchlist</button>
+               <h2 class="name">avengers end game</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
             </div>
          </div>
          <div class="card">
             <img class="card-images" src="./images/poster 5.png" alt="poster 5">
             <div class="card-body">
+               <h2 class="name">thor ragnarock</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 6.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">avengers</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 7.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">Pirates of carbian</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 8.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">Soul</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 9.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">raya last dragon</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 10.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">Luca</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 11.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">ford v farari</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 12.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">dark phoenix</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 1.png" alt="poster 5">
+            <div class="card-body">
                <h2 class="name">Loki</h2>
-               <h6 class="diss">This is the best in Marvel!</h6>
-               <button class="watchlist">add to watchlist</button>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 2.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">mulan</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 3.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">the falcon</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 4.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">avengers end game</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 5.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">thor ragnarock</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 6.png" alt="poster 6">
+            <div class="card-body">
+               <h2 class="name">avengers</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+      </div>
+   </div> 
+
+   <h1 class="heading-1" id="Sports">Comedy Movie</h1>
+   <div class="movies-list">
+      <button class="pre-btn">
+         <img src="./images/pre.png" alt="left btn" title="btn">
+      </button>
+      <button class="next-btn">
+         <img src="./images/nxt.png" alt="right btn" title="btn">
+      </button>
+      <div class="card-container">
+         <div class="card">
+            <img class="card-images" src="./images/poster 20.png" alt="poster 1">
+            <div class="card-body">
+               <h2 class="name">Hum do</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 19.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">housefull 3</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 18.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">housefull 4</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 17.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">lootcase</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 16.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">vikram</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 24.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">Loki</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 21.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">good luck jerry</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 22.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">laxmi</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+           <div class="card">
+            <img class="card-images" src="./images/poster 14.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">chhichhore</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 15.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">shang-chi</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 16.png" alt="poster 5">
+            <div class="card-body">
+               <h2 class="name">vikram</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 18.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">housefull 4</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 17.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">lootcase</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 16.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">vikram</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 24.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">chaipatti</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 21.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">good luck</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 13.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">the night manager</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/poster 15.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">shang-chi</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+    <h1 class="heading-1" id="TV">Dramas</h1>
+   <div class="movies-list">
+      <button class="pre-btn">
+         <img src="./images/pre.png" alt="left btn" title="btn">
+      </button>
+      <button class="next-btn">
+         <img src="./images/nxt.png" alt="right btn" title="btn">
+      </button>
+      <div class="card-container">
+         <div class="card">
+            <img class="card-images" src="./images/drama 1.png" alt="poster 1">
+            <div class="card-body">
+               <h2 class="name">teri meri doriya</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 2.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">anupama</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 3.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">imli</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 4.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">ye hai chahate</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 5.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">mahabharat</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 6.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">sourabh</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 5.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">mahabharat</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 1.png" alt="poster 1">
+            <div class="card-body">
+               <h2 class="name">teri meri doirya</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 2.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">anupama</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 3.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">imli</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 4.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">ye hai chahaate</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 1.png" alt="poster 1">
+            <div class="card-body">
+               <h2 class="name">teri meri</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 2.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">anupama</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 3.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">imli</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
+            </div>
+         </div>
+         <div class="card">
+            <img class="card-images" src="./images/drama 4.png" alt="poster 2">
+            <div class="card-body">
+               <h2 class="name">ye hai chahaate</h2>
+               <h6 class="diss">Recommended for You!</h6>
+               <button class="watchlist-btn ">add to watchlist</button>
             </div>
          </div>
       </div>

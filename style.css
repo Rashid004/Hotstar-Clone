@@ -87,16 +87,17 @@ body{
   opacity: 0.9;
   
 }
-/* Section carousel */
+ /* //////////////// */
 .carousel-container {
   position: relative;
   width:100%;
   height:45rem;
-  /* overflow: hidden; */
+  overflow-x: hidden;
   padding: 2rem 0; 
   /* margin: 0 auto; */
   margin-top: 8rem;
 }
+
 .carousel{
   display: flex;
   position: relative;
@@ -114,7 +115,7 @@ body{
   height: 100%;
   left: 0;
   transition: 3s;
-  /* overflow: hidden; */
+  overflow: hidden;
   /* opacity: ; */
 }
 .slider img {
@@ -124,23 +125,23 @@ body{
   display: block;
   margin-left: auto;
   /* overflow: hidden; */
-}
+} 
 .slide-content {
   position: absolute;
   width: 50%;
-  height:100%;
+  height: 100%;
   color: #fff;
   background: linear-gradient(to right,
   #030b17 80%, #0c111b00);
-  z-index: 3;
+  z-index: 2;
 }
-.movie-tittle {
-  padding-left: 5rem;
+.movie-name {
+  /* font-size: 2.6rem; */
   text-transform: capitalize;
+  padding-left: 5rem;
   margin-top: 8rem;
-  font-size: 2.6rem;
 }
-.movie-des {
+.movie-text {
  width: 80%;
  line-height: 3rem;
  padding-left: 5rem;
@@ -148,9 +149,7 @@ body{
  font-size: 1.4rem;
  opacity: 0.8;
 }
-.slide.active {
-  opacity: 1;
-}
+
 /* Section card */
 .section-card-video {
   position: relative;
@@ -192,21 +191,137 @@ body{
   text-transform: capitalize;
   padding-left: 4%;
 }
-.movies-container {
+.movies-list {
   position: relative;
   width: 100%;
   height: 22rem;
   margin: 1rem 0 1rem;
 }
-.card-container {
+
+ .card-container {
+    position: relative;
+    width: 92%;
+    padding-left: 10px;
+    height: 220px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+  }
+  .card-container::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    position: relative;
+    min-width: 15rem;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-right: 1rem;
+    transition: 0.5s;
+  }
+  .card-images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card:hover .card-body {
+    opacity: 1;
+  }
+  
+  .card-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom,
+    rgba(4, 8, 15, 0), #192133 90%);
+    padding: 1rem;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  
+  .name {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-top: 60%;
+  }
+  .diss {
+    color: #fff;
+    opacity: 0.8;
+    margin: 0.5rem 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+.watchlist-btn {
   position: relative;
-  width: 92%;
-  height: 22rem;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  padding-left: 1rem;
-  overflow-x: hidden;
-  overflow-y: visible;
-  scroll-behavior: smooth;
+  width: 100%;
+  font-weight: 500;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  text-align: right;
+  background: none;
+  border: none;
+  text-transform: capitalize;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+} 
+.watchlist-btn::before {
+  content: '';
+  position: absolute;
+  background-image: url(images/add.png);
+  background-size: cover;
+  top: 0;
+  left: -0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  transform: scale(0.4);
+}
+.watchlist-btn:hover {
+  color: #fff;
+ background:rgba(255,255,255,0.1);
+}
+
+.pre-btn,
+.next-btn {
+ position: absolute;
+ top: 0;
+ width: 5%;
+ height: 100%;
+ z-index: 4;
+ border:none;
+ outline: none;
+ cursor: pointer;
+}
+.pre-btn {
+  left: 0;
+  background: linear-gradient(to right,
+  #0c111b 0%, #0c111b00);
+}
+.next-btn {
+  right: 0;
+  background: linear-gradient(to left,
+  #0c111b 0%, #0c111b00);
+}
+.pre-btn img,
+.next-btn img {
+  width: 1.5rem;
+  height: 2rem;
+  opacity: 0;
+}
+.pre-btn:hover img,
+.next-btn:hover img {
+  opacity: 1;
 }
