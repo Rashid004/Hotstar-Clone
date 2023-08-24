@@ -1,5 +1,6 @@
 'use-strict'
 
+// Movies Array data 
 let movies = [
   {
     name: 'the falcon and winter soldier',
@@ -32,6 +33,7 @@ let movies = [
     image: 'images/slider 5.png',
   },
 ];
+
 // DOM document selecter
 const cardContainers = [...document.querySelectorAll('.card-container')];
 const preBtns = [...document.querySelectorAll('.pre-btn')];
@@ -50,13 +52,13 @@ const createSlide = () => {
   if(slideIndex >= movies.length){
     slideIndex = 0;
   }
-  //   // DOM Craetion
+// DOM Craetion
   const slide = document.createElement('div');
   const  imgElement = document.createElement('img');
   const content = document.createElement('div');
   const h1 = document.createElement('h1');
   const p = document.createElement('p');
-  //  Attaching
+  //Attaching
   
   imgElement.appendChild(document.createTextNode(''));
   h1.appendChild(document.createTextNode(movies[slideIndex].name));
@@ -101,23 +103,21 @@ setInterval(() => {
   })
   preBtns[i].addEventListener('click',() => {
     item.scrollLeft -= containerWidth + 200;
+
   })
 });
 
 // Scroll Behavier in nav 
-document.querySelector('.nav__link').addEventListener('click', function (e) {
+document.querySelector('.nav__link').addEventListener('click',function(e) {
   e.preventDefault();
-  
-  // Matching startegy
-  if (e.target.classList.contains('nav__link')) {
+  if(e.target.classList.contains('nav__link')) {
     const id = e.target.getAttribute('href');
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+    document.querySelector(id).scrollIntoView({behavior: 'smooth'});
   }
 });
 
-
+// Video play and paused
   const videoCards = [...document.querySelectorAll('.video-card')];
-
   videoCards.forEach(item => {
     item.addEventListener('mouseover', () => {
       let video = item.children[1];

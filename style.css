@@ -88,6 +88,8 @@ body{
   
 }
  /* //////////////// */
+ /* Carousel container */
+
 .carousel-container {
   position: relative;
   width:100%;
@@ -149,8 +151,9 @@ body{
  font-size: 1.4rem;
  opacity: 0.8;
 }
-
+/* ///////////////////////// */
 /* Section card */
+
 .section-card-video {
   position: relative;
   width: 92%;
