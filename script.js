@@ -83,14 +83,13 @@ const createSlide = () => {
     sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)}% - ${30 * (sliders.length - 2)}px)`;
   }
 };
-for(let i = 0; i < 3; i++ ) {
+for(let i = 0; i < 3; i++) {
   createSlide();
 }
 setInterval(() => {
   createSlide();
 },3000);
-
-
+// ************/****/////
 ///////////////
 // Slider btn 
   cardContainers.forEach((item,i) => {
@@ -114,6 +113,7 @@ document.querySelector('.nav__link').addEventListener('click',function(e) {
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({behavior: 'smooth'});
   }
+
 });
 
 // Video play and paused
@@ -122,9 +122,12 @@ document.querySelector('.nav__link').addEventListener('click',function(e) {
     item.addEventListener('mouseover', () => {
       let video = item.children[1];
       video.play();
+
     });
+
     item.addEventListener('mouseleave', () => {
       let video = item.children[1];
       video.pause();
+
     });
-  });
+});
